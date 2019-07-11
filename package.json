@@ -1,0 +1,50 @@
+{
+  "name": "api-testing-nodejs-typescript",
+  "version": "1.0.0",
+  "description": "API Tests using Mocha, TypeScript, Chai and Request",
+  "repository": "https://github.com/s3anand21/api-testing-nodejs-typescript.git",
+  "scripts": {
+    "test": "gulp test",
+    "lint": "tslint --fix 'test/**/*.ts' && tslint --fix 'src/**/*.ts' && tslint",
+    "allure-report": "allure generate target/allure-results --clean -o target/allure-report && allure open target/allure-report",
+    "junit-report": "node_modules/.bin/junit-viewer --results=./target/junit/ --save=target/junit/report.html && open target/junit/report.html"
+  },
+  "author": "Anand Ganesh",
+  "license": "ISC",
+  "keywords": [
+    "api test",
+    "mocha",
+    "typescript",
+    "request",
+    "allure"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/del": "^3.0.1",
+    "@types/gulp": "^4.0.5",
+    "@types/minimist": "^1.2.0",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.9.4",
+    "ajv": "^6.9.2",
+    "allure-commandline": "^2.9.0",
+    "chai": "^4.2.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-run-command": "^0.0.9",
+    "junit-viewer": "^4.11.1",
+    "minimist": "^1.2.0",
+    "mocha": "^6.0.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mocha-junit-reporter": "^1.18.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^3.1.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "ts-node": "^8.0.2",
+    "tsconfig-paths": "^3.8.0",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.3.3"
+  }
+}

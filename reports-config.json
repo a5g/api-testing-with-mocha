@@ -1,0 +1,17 @@
+{
+  "reporterEnabled": "mocha-allure-reporter, mochawesome, mocha-junit-reporter",
+  "mochaAllureReporterReporterOptions": {
+    "targetDir": "target/allure-results"
+  },
+  "mochawesomeReporterOptions": {
+    "reportDir": "target/mochawesome",
+    "reportFilename": "report.html",
+    "reportTitle": "MCC End to End Test Report",
+    "code": false,
+    "overwrite": true,
+    "quiet": true
+  },
+  "mochaJunitReporterReporterOptions": {
+    "mochaFile": "target/junit/report.xml"
+  }
+}
